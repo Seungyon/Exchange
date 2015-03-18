@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A4D94D8-2399-4EF4-A1F2-F1C20C4EB631}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APPS_Exchange</RootNamespace>
+    <AssemblyName>3D APPS Exchange</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>72X72.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\3D APPS Exchange.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\3D APPS Exchange.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="3DM2PRC">
+      <HintPath>bin\Release\3DM Converter\3DM2PRC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="3DPDFGenerator">
+      <HintPath>..\Project\DLL\3DPDFGenerator\3DPDFGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtractPRC">
+      <HintPath>bin\Release\RVM Converter\ExtractPRC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.3.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\itextsharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="KermitPDFExporterCtrl">
+      <HintPath>bin\Release\backingPDF\KermitPDFExporterCtrl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="LicenseSystem">
+      <HintPath>..\Project\DLL\LicenseSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Project\DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDefine">
+      <HintPath>bin\Release\RVM Converter\MaterialDefine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="RVMLibrary">
+      <HintPath>bin\Release\RVM Converter\RVMLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinControls.ListView">
+      <HintPath>..\Project\DLL\WinControls.ListView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="backingPDF.cs" />
+    <Compile Include="BoxOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoxOptions.designer.cs">
+      <DependentUpon>BoxOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPDFViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPDFViewer.Designer.cs">
+      <DependentUpon>FrmPDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm_New.Designer.cs">
+      <DependentUpon>MainForm_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBox_extend.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewWrapper.cs" />
+    <Compile Include="DataStruct.cs" />
+    <Compile Include="FinishForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinishForm.Designer.cs">
+      <DependentUpon>FinishForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ini.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="PDFConverter_config.cs" />
+    <Compile Include="RVMUtility.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LicenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicenseForm.Designer.cs">
+      <DependentUpon>LicenseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_output_dwf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_output_dwf.Designer.cs">
+      <DependentUpon>UC_output_dwf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_output_nwc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_output_nwc.Designer.cs">
+      <DependentUpon>UC_output_nwc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_general_output.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_general_output.Designer.cs">
+      <DependentUpon>UC_general_output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_output_pdf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_output_pdf.Designer.cs">
+      <DependentUpon>UC_output_pdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_reader_pdf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_reader_pdf.Designer.cs">
+      <DependentUpon>UC_reader_pdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_general_log.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_general_log.Designer.cs">
+      <DependentUpon>UC_general_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_output_pdf_emplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_output_pdf_emplate.Designer.cs">
+      <DependentUpon>UC_output_pdf_emplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_reader_rvm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_reader_rvm.Designer.cs">
+      <DependentUpon>UC_reader_rvm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BoxOptions.resx">
+      <DependentUpon>BoxOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinishForm.resx">
+      <DependentUpon>FinishForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPDFViewer.resx">
+      <DependentUpon>FrmPDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm_New.resx">
+      <DependentUpon>MainForm_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LicenseForm.resx">
+      <DependentUpon>LicenseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_output_dwf.resx">
+      <DependentUpon>UC_output_dwf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_output_nwc.resx">
+      <DependentUpon>UC_output_nwc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_general_output.resx">
+      <DependentUpon>UC_general_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UC_output_pdf.resx">
+      <DependentUpon>UC_output_pdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_reader_pdf.resx">
+      <DependentUpon>UC_reader_pdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_general_log.resx">
+      <DependentUpon>UC_general_log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_output_pdf_emplate.resx">
+      <DependentUpon>UC_output_pdf_emplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_reader_rvm.resx">
+      <DependentUpon>UC_reader_rvm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="72X72.ico" />
+    <None Include="res\expand.png" />
+    <None Include="res\collapse.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
